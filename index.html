@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- FontSize - SpaceMono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Title -->
+  <title>Tip Calculator App</title>
+  <!-- Javascript -->
+  <script type="module" src="./js/main.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/global.css">
+</head>
+
+<body>
+  <main class="main flex">
+    <img class="img--logo" src="./images/logo.svg" alt="Logo">
+
+    <section class="main__container container rounded grid">
+      <div class="main__container-left">
+        <div class="main__container-bill-content">
+          <label class="main__title" for="billAmount">Bill</label>
+          <div class="input__container">
+            <img class="input__icon" src="./images/icon-dollar.svg" alt="Dollar Icon">
+            <input class="input" id="billAmount" type="text" placeholder="0">
+          </div>
+        </div>
+        <div class="main__container-tip-content">
+          <label class="main__title">Select Tip %</label>
+          <div class="tip__content grid">
+            <button class="tipButton btn btn--primary" data-percentage="5">5%</button>
+            <button class="tipButton btn btn--primary" data-percentage="10">10%</button>
+            <button class="tipButton btn btn--primary" data-percentage="15">15%</button>
+            <button class="tipButton btn btn--primary" data-percentage="25">25%</button>
+            <button class="tipButton btn btn--primary" data-percentage="50">50%</button>
+            <input class="btn btn--input" type="text" placeholder="Custom">
+          </div>
+        </div>
+        <div class="main__container-numberpeople-container">
+          <label class="main__title" for="numberOfPeople">Number of People</label>
+          <div class="input__container">
+            <img class="input__icon" src="./images/icon-person.svg" alt="Person Icon">
+            <input class="input" id="numberOfPeople" type="text" placeholder="0">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main__container-right">
+        <div class="main__container-output">
+          <div class="main__container-output--tip">
+            <p class="main__output-text">Tip Amount </br> <span class="main__output-span">/ person</span> </p>
+            <p class="main__output-amount" id="tipResult">$0.00</p>
+          </div>
+          <div class="main__container-output--total">
+            <p class="main__output-text">Total </br> <span class="main__output-span">/ person</span> </p>
+            <p class="main__output-amount" id="totalResult">$0.00</p>
+          </div>
+        </div>
+        <div class="main__container-output--btn flex">
+          <button class="btn btn--secondary" type="reset">RESET</button>
+          <button class="btn btn--secondary" id="calculateButton">CALCULATE</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

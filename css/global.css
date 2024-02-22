@@ -1,0 +1,105 @@
+@import './modules/button.css';
+@import './modules/input.css';
+@import './modules/main.css';
+
+:root {
+  /* colors */
+  /* primary */
+  --strong-cyan: hsl(172, 67%, 45%);
+
+  /* neutral */
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  /* font and typography */
+  --body-font: "Space Mono", monospace;
+
+  /* .5rem = 8px | 1rem = 16px */
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.75rem;
+
+  /* font weight */
+  --font-normal: 400;
+  --font-bold: 700;
+
+  /* margins bottom */
+  /* .5rem = 8px | 1rem = 16px */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+}
+
+/* base */
+* {
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-grayish-cyan);
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+
+/* reusable css classes */
+.container {
+  max-width: 968px;
+  margin: 5rem auto 0
+}
+
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.rounded {
+  border-radius: 1rem;
+}
